@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritha Arun Babu Mysore - Professional Portfolio</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --accent: #4299e1;
+            --text: #2d3748;
+            --light: #f7fafc;
+            --dark: #1a202c;
+            --border: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: var(--accent);
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0 2rem;
+        }
+        
+        .skill {
+            background-color: #e6f0ff;
+            color: var(--secondary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .work-item, .publication-item, .project-item {
+            margin-bottom: 2rem;
+        }
+        
+        .work-item:last-child, .publication-item:last-child, .project-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .work-meta, .publication-meta {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .tag {
+            background-color: #edf2f7;
+            color: var(--text);
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .project-title {
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-link {
+            margin-top: 1rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Amritha Arun Babu Mysore</h1>
+            <p class="title">AI/ML Product & Strategy Leader | Technical Writer | Speaker | Researcher</p>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>I am an experienced leader in AI/ML product strategy, specializing in design thinking methodologies for machine learning operations and product development. With expertise in AI ethics, MLOps, and data product management, I help organizations build effective and responsible AI solutions.</p>
+                <p>My work spans multiple domains including technical research, product management, and thought leadership in AI applications across supply chain, linguistics, and enterprise solutions.</p>
+            </div>
+        </section>
+        
+        <section id="expertise">
+            <div class="container">
+                <h2>Areas of Expertise</h2>
+                <div class="skills">
+                    <span class="skill">AI/ML Strategy</span>
+                    <span class="skill">MLOps</span>
+                    <span class="skill">Design Thinking</span>
+                    <span class="skill">Product Management</span>
+                    <span class="skill">Data Strategy</span>
+                    <span class="skill">AI Ethics</span>
+                    <span class="skill">Supply Chain Optimization</span>
+                    <span class="skill">LLM Evaluation</span>
+                    <span class="skill">South Asian NLP</span>
+                    <span class="skill">Technical Writing</span>
+                    <span class="skill">Technical Leadership</span>
+                    <span class="skill">Demand Forecasting</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured-projects">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">MLOps Design Thinking Framework</h3>
+                            <p>Development of a design thinking framework for building ML infrastructure for ML and LLM use cases</p>
+                            <div class="tag-list">
+                                <span class="tag">MLOps</span>
+                                <span class="tag">Design Thinking</span>
+                                <span class="tag">LLM</span>
+                            </div>
+                            <a href="https://home.mlops.community/public/videos/mlops-design-thinking-to-build-ml-infra-for-ml-and-llm-use-cases" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Multi-language LLM Evaluation</h3>
+                            <p>Research on GPT-3.5's capabilities and limitations in South Asian languages</p>
+                            <div class="tag-list">
+                                <span class="tag">AI</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">South Asian Languages</span>
+                            </div>
+                            <a href="https://dzone.com/articles/lost-in-translation-gaps-of-gpt-35-in-south-asian" class="project-link" target="_blank">Read Article</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Data Product Management Podcast</h3>
+                            <p>Hosting a podcast focused on practical aspects of data product management</p>
+                            <div class="tag-list">
+                                <span class="tag">Data Product Management</span>
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Industry Insights</span>
+                            </div>
+                            <a href="https://podcasts.apple.com/cz/podcast/introducing-host-amritha-arun-babu/id1753075743?i=1000694723395" class="project-link" target="_blank">Listen to Podcast</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">AI Ethics Framework</h3>
+                            <p>Development of ethical guidelines for AI product development</p>
+                            <div class="tag-list">
+                                <span class="tag">AI Ethics</span>
+                                <span class="tag">Product Management</span>
+                                <span class="tag">Strategy</span>
+                            </div>
+                            <a href="https://dzone.com/articles/ethical-ai-products-navigating-the-future-of-techn" class="project-link" target="_blank">Read Article</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">AI for Supply Chain Optimization</h3>
+                            <p>Research and implementation of AI-based demand forecasting for supply chains</p>
+                            <div class="tag-list">
+                                <span class="tag">Supply Chain</span>
+                                <span class="tag">AI</span>
+                                <span class="tag">Demand Forecasting</span>
+                            </div>
+                            <a href="https://www.engineeringnews.co.za/article/leading-supply-chain-conference-will-explore-ais-demand-forecasting-capabilities-smart-cities-and-big-data-2024-03-20" class="project-link" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <div class="container">
+                <h2>Publications & Media</h2>
+                
+                <div class="publication-item">
+                    <h3>Technical Articles</h3>
+                    <ul>
+                        <li>
+                            <a href="https://dzone.com/articles/lost-in-translation-gaps-of-gpt-35-in-south-asian" target="_blank">Lost in Translation: Gaps of GPT-3.5 in South Asian</a>
+                            <p class="publication-meta">DZone</p>
+                        </li>
+                        <li>
+                            <a href="https://dzone.com/articles/ethical-ai-products-navigating-the-future-of-techn" target="_blank">Ethical AI Products: Navigating the Future of Technology</a>
+                            <p class="publication-meta">DZone</p>
+                        </li>
+                        <li>
+                            <a href="https://dev.to/mlopscommunity/mlops-design-thinking-to-build-ml-infra-for-ml-and-llm-use-casess-amritha-arun-babu-abhik-choudhury-221" target="_blank">MLOps Design Thinking to Build ML Infra for ML and LLM Use Cases</a>
+                            <p class="publication-meta">DEV Community</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="publication-item">
+                    <h3>Speaking & Presentations</h3>
+                    <ul>
+                        <li>
+                            <a href="https://home.mlops.community/public/videos/mlops-design-thinking-to-build-ml-infra-for-ml-and-llm-use-cases" target="_blank">MLOps Design Thinking to Build ML Infra for ML and LLM Use Cases</a>
+                            <p class="publication-meta">MLOps Community</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=K_g9XmybXV0" target="_blank">AI and Machine Learning Implementation Strategies</a>
+                            <p class="publication-meta">YouTube</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=V-3Dbn5_RwM" target="_blank">Product Management for AI/ML Solutions</a>
+                            <p class="publication-meta">YouTube</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="publication-item">
+                    <h3>Academic Research</h3>
+                    <ul>
+                        <li>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Jx7T-WgAAAAJ&citation_for_view=Jx7T-WgAAAAJ:d1gkVwhDpl0C" target="_blank">Academic Research Publications</a>
+                            <p class="publication-meta">Google Scholar</p>
+                        </li>
+                        <li>
+                            <a href="https://www.researchgate.net/profile/Amritha-Arun-Babu-Mysore-3" target="_blank">Research Contributions</a>
+                            <p class="publication-meta">ResearchGate</p>
+                        </li>
+                        <li>
+                            <a href="https://iaeme.com/Home/author_details/93167" target="_blank">IAEME Publications</a>
+                            <p class="publication-meta">IAEME</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="publication-item">
+                    <h3>Podcasts & Media</h3>
+                    <ul>
+                        <li>
+                            <a href="https://podcasts.apple.com/cz/podcast/introducing-host-amritha-arun-babu/id1753075743?i=1000694723395" target="_blank">Data Product Management in Action: The Practitioner's Podcast</a>
+                            <p class="publication-meta">Host, Apple Podcasts</p>
+                        </li>
+                        <li>
+                            <a href="https://music.amazon.com/es-co/podcasts/7e8ba721-edd4-4026-9953-24bcb8ec6ce6/data-product-management-in-action-the-practitioner's-podcast" target="_blank">Data Product Management in Action</a>
+                            <p class="publication-meta">Host, Amazon Music</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="teaching">
+            <div class="container">
+                <h2>Teaching & Instruction</h2>
+                <p>I share my expertise through educational content and courses to help others develop skills in AI/ML product management and implementation strategies.</p>
+                <p><a href="https://www.udemy.com/user/amritha-3282/?srsltid=AfmBOooIBXZp29l4VYom_MtkjXQfDKOxGRKFU1X5B5LMtG1eTht9A4g7" target="_blank">View my courses on Udemy</a></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <div class="contact-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/amritha-arun-babu-a2273729/" target="_blank">LinkedIn</a>
+                </div>
+                
+                <div class="contact-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                    <a href="https://www.mindtheproduct.com/profile/amrithaarun-babu-mysore46420/" target="_blank">Mind the Product</a>
+                </div>
+                
+                <div class="contact-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <path d="M21 15l-5-5L5 21"></path>
+                    </svg>
+                    <a href="https://www.researchgate.net/profile/Amritha-Arun-Babu-Mysore-3" target="_blank">ResearchGate</a>
+                </div>
+            </div>
+            <p>&copy; 2025 Amritha Arun Babu Mysore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
